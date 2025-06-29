@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/simulasi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER SIMULASI -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <!-- Background Hijau -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="232dp"
+                android:background="@color/simulasi"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanistregular"
+                    android:lineSpacingExtra="7dp"
+                    android:padding="30dp"
+                    android:text="@string/simulasi"
+                    android:textColor="@color/text"
+                    android:textSize="36sp"
+                    android:layout_marginTop="50dp"/>
+            </LinearLayout>
+
+            <!-- Dekorasi sudut kanan atas -->
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="250dp"
+                android:layout_gravity="top|end"
+                android:contentDescription="Header Decoration"
+                android:scaleType="fitXY"
+                android:src="@drawable/asset2" />
+        </FrameLayout>
+
+        <!-- CARD CONTAINER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/rounded_top_white">
+
+            <!-- CARD 1: Age -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="⏳ Age"
+                android:textSize="20sp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:padding="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBarAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="60"
+                        android:progress="35"
+                        android:progressTint="#4CAF50"
+                        android:thumbTint="#4CAF50"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvAgeValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="35 years"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/urbanistregular"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CARD 2: Gender -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="🍀 Gender"
+                android:textSize="20sp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:padding="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="24dp"
+                            android:checked="true"
+                            android:buttonTint="#4CAF50" />
+
+                        <RadioButton
+                            android:id="@+id/rbMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textSize="16sp"
+                            android:buttonTint="#4CAF50" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CARD 3: Introversion Score -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="☂️ Introversion Score"
+                android:textSize="20sp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/introversiondecs"
+                android:textSize="15sp"
+                android:fontFamily="@font/urbanistregular"
+                android:textColor="@color/simulasi"
+                android:padding="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBarIntroversion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="10"
+                        android:progress="3"
+                        android:progressTint="#4CAF50"
+                        android:thumbTint="#4CAF50"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvIntroversionValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/introversion"
+                android:textSize="15sp"
+                android:fontFamily="@font/urbanistregular"
+                android:textColor="@color/simulasi"
+                android:padding="15dp"/>
+
+            <!-- CARD 4: Thingking Score -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="🧠 Thinking Score"
+                android:textSize="20sp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/thinkingdesc"
+                android:textSize="15sp"
+                android:fontFamily="@font/urbanistregular"
+                android:textColor="@color/simulasi"
+                android:padding="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBarThingking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="10"
+                        android:progress="6"
+                        android:progressTint="#4CAF50"
+                        android:thumbTint="#4CAF50"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvThingkingValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/thinking"
+                android:textSize="15sp"
+                android:fontFamily="@font/urbanistregular"
+                android:textColor="@color/simulasi"
+                android:padding="15dp"/>
+
+            <!-- CARD 5: Sensing Score -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="🌵 Sensing Score"
+                android:textSize="20sp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/sensingdesc"
+                android:textSize="15sp"
+                android:fontFamily="@font/urbanistregular"
+                android:textColor="@color/simulasi"
+                android:padding="15sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBarSensing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="10"
+                        android:progress="8"
+                        android:progressTint="#4CAF50"
+                        android:thumbTint="#4CAF50"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvSensingValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/sensing"
+                android:textSize="15sp"
+                android:fontFamily="@font/urbanistregular"
+                android:textColor="@color/simulasi"
+                android:padding="15dp"/>
+
+            <!-- CARD 6: Judging Score -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="👀 Judging Score"
+                android:textSize="20sp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/judgingdesc"
+                android:textSize="15sp"
+                android:fontFamily="@font/urbanistregular"
+                android:textColor="@color/simulasi"
+                android:padding="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <SeekBar
+                        android:id="@+id/seekBarJudging"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="10"
+                        android:progress="5"
+                        android:progressTint="#4CAF50"
+                        android:thumbTint="#4CAF50"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvJudgingValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/judging"
+                android:textSize="15sp"
+                android:fontFamily="@font/urbanistregular"
+                android:textColor="@color/simulasi"
+                android:padding="15dp"/>
+
+            <!-- Interest Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="⭐ Interest"
+                android:textSize="20sp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:padding="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+            <Spinner
+                android:id="@+id/spinnerInterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:backgroundTint="#4CAF50"
+                android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Button -->
+            <Button
+                android:id="@+id/btnPredict"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="PREDIKSI"
+                android:textSize="15sp"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/simulasi"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="70dp" />
+
+            <!-- Result -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvMbtiResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MBTI kamu adalah: INTJ"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/urbanistbold"
+                        android:textColor="@color/purple_700"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvMbtiDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="📝 Deskripsi: Logis, strategis, dan independen..."
+                        android:textSize="14sp"
+                        android:fontFamily="@font/urbanistmedium"
+                        android:textColor="@color/black"
+                        android:paddingBottom="6dp" />
+
+                    <TextView
+                        android:id="@+id/tvMbtiTokoh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="💃 Tokoh Terkenal: Elon Musk, Stephen Hawking"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/urbanistmedium"
+                        android:textColor="@color/amber_700"
+                        android:paddingBottom="6dp" />
+
+                    <TextView
+                        android:id="@+id/tvMbtiPasangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanistmedium"
+                        android:text="💝 Pasangan Cocok: ENFP, ENTP"
+                        android:textSize="14sp"
+                        android:textColor="@color/teal_700" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

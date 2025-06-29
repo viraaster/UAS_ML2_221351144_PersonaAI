@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="12dp"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="750dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="Persona AI"
+        android:textColor="@color/text2"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="700dp"
+        android:fontFamily="@font/urbanistmedium"
+        android:text="@string/desc3"
+        android:textColor="@color/text2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:rowOrderPreserved="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <!-- CARD : TENTANG APLIKASI -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTentangAplikasi"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/tentangaplikasi"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="191dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Konten utama -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:text="@string/tentangaplikasi"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginRight="25dp"/>
+                </LinearLayout>
+
+                <!-- Gambar di pojok kanan atas -->
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="135dp"
+                    android:layout_gravity="top|end"
+                    android:src="@drawable/asset1"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_top_image"
+                    android:clipToOutline="true" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CARD : DATASET-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDataset"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/dataset"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="191dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Konten utama -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:text="@string/dataset"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginRight="25dp"/>
+                </LinearLayout>
+
+                <!-- Gambar di pojok kanan atas -->
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="135dp"
+                    android:layout_gravity="top|end"
+                    android:src="@drawable/asset3"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_top_image"
+                    android:clipToOutline="true" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CARD : FITUR -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFitur"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/fitur"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="191dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Konten utama -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:text="@string/fitur"
+                        android:textColor="@color/text2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginRight="45dp"/>
+                </LinearLayout>
+
+                <!-- Gambar di pojok kanan atas -->
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="135dp"
+                    android:layout_gravity="top|end"
+                    android:src="@drawable/asset5"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_top_image"
+                    android:clipToOutline="true" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CARD : MODEL -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardModel"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/model"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="191dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Konten utama -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:text="@string/model"
+                        android:textColor="@color/text2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginRight="45dp"/>
+                </LinearLayout>
+
+                <!-- Gambar di pojok kanan atas -->
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="135dp"
+                    android:layout_gravity="top|end"
+                    android:src="@drawable/asset4"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_top_image"
+                    android:clipToOutline="true" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CARD : SIMULASI -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSimulasi"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/simulasi"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="191dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Konten utama -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:text="@string/simulasi"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+                <!-- Gambar di pojok kanan atas -->
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="135dp"
+                    android:layout_gravity="top|end"
+                    android:src="@drawable/asset2"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_top_image"
+                    android:clipToOutline="true" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CARD : About Dev -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAboutDev"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/about_dev"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="191dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Konten utama -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:text="About\nDev"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginLeft="1dp"/>
+                </LinearLayout>
+
+                <!-- Gambar di pojok kanan atas -->
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="135dp"
+                    android:layout_gravity="top|end"
+                    android:src="@drawable/asset"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_top_image"
+                    android:clipToOutline="true" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

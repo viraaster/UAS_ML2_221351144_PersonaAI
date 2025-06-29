@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Persona AI</string>
+    <string name="desc">Mengenali kepribadian MBTI-mu</string>
+    <string name="desc2">berdasarkan Big Five Personality dan Minat.</string>
+    <string name="desc3">Tujuan utama MBTI adalah untuk membantu individu memahami preferensi pribadi mereka</string>
+    <string name="tentangaplikasi">Tentang\nAplikasi</string>
+    <string name="dataset">Dataset</string>
+    <string name="fitur">Fitur</string>
+    <string name="model">Model</string>
+    <string name="simulasi">Simulasi</string>
+
+    <!-- TENTANG APLIKASI -->
+    <string name="storyline">Aplikasi ini dibuat dengan tujuan agar dapat membantu pengguna mengenali tipe kepribadian MBTI mereka secara akurat berdasarkan preferensi Big Five Personality dan minat. Di bidang pengembangan diri dan pemahaman potensi manusia, wawasan kepribadian yang mendalam sangat penting dalam membuat keputusan yang lebih baik tentang karir, hubungan, dan pertumbuhan pribadi.</string>
+    <string name="dataset2">Dataset diambil dari website Kaggle yang dibuat oleh stealthtechnologies dengan judul Predict People Personality Types.</string>
+    <string name="datasetlink">https://www.kaggle.com/datasets/stealthtechnologies/predict-people-personality-types</string>
+    <string name="carakerjaplikasi">Ada beberapa menu pilihan lain yang bisa dipilih pada aplikasi ini. Pada menu pilihan Dataset adalah untuk melihat dataset kepribadian (termasuk Big Five Personality dan minat) yang digunakan untuk melatih model. Menu pilihan Fitur yaitu melihat fitur-fitur data kepribadian (seperti usia, jenis kelamin, minat, dan preferensi MBTI) yang digunakan dalam model. Menu Model yaitu merupakan tahapan proses modeling (pelatihan model machine learning) dalam memproses fitur-fitur tersebut. Terakhir, menu Simulasi memungkinkan pengguna melakukan simulasi data input preferensi kepribadian yang berbeda untuk melihat bagaimana hal itu memengaruhi prediksi tipe kepribadian MBTI.</string>
+
+    <!-- SIMULASI -->
+    <string name="introversiondecs">Menunjukkan kecenderungan seseorang terhadap Ekstrovert (E) daripada Introvert(I)</string>
+    <string name="thinkingdesc">Menunjukkan kecenderungan terhadap Thinking (T) daripada Feeling (F)</string>
+    <string name="sensingdesc">Menunjukkan kecenderungan seseorang terhadap Sensing (S) daripada Intuition (N)</string>
+    <string name="judgingdesc">Menunjukkan kecenderungan terhadap Judging (J) daripada Perceiving (P)</string>
+    <string name="introversion">Skor tinggi → 😌lebih ekstrovert, suka interaksi sosial dan keramaian.\nSkor rendah → 😶lebih pendiam, suka refleksi, butuh waktu sendiri untuk mengisi energi.</string>
+    <string name="thinking">Skor tinggi → 🤖membuat keputusan berdasarkan logika dan objektivitas.\nSkor rendah → ❤️lebih mempertimbangkan perasaan orang lain dan empati saat mengambil keputusan.</string>
+    <string name="sensing">Skor tinggi → 👁️suka informasi konkret, nyata, detail, dan pengalaman langsung.\nSkor rendah → 🌌cenderung intuitif, suka ide besar, pola, dan konsep.</string>
+    <string name="judging">Skor tinggi → 📋menyukai rencana, terorganisir, dan suka kepastian.\nSkor rendah → 🔄lebih fleksibel, spontan, dan terbuka terhadap perubahan.</string>
+    <string-array name="interest_options">
+        <item>Unknown</item>
+        <item>Arts</item>
+        <item>Sports</item>
+        <item>Technology</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- DATASET -->
+    <string name="datasetdeskripsi">Dataset ini dirancang untuk tujuan prediksi tipe kepribadian, terdiri dari 9 kolom yang memuat berbagai informasi. Kolom-kolom tersebut meliputi data demografi seperti Age, Gender, dan Education, diikuti dengan skor preferensi kepribadian yaitu Introversion Score (IS), Sensing Score (SS), Thinking Score (TS), dan Judging Score (JS). Selain itu, dataset ini juga mencakup informasi mengenai Interest dan Personality (Target) yang merupakan label tipe kepribadian yang diprediksi.</string>
+
+    <!-- FITUR -->
+    <string name="Age">Tipe Data : Numerik (Integer/Float)\nBentuk Nilai Fitur: Angka Bulat atau Desimal\n\nMerepresentasikan usia partisipan. Fitur ini dapat memberikan konteks demografis yang berkorelasi dengan preferensi kepribadian atau minat.</string>
+    <string name="Gender">Tipe Data : Kategorikal (String/Boolean/Integer encoded)\nBentuk Nilai Fitur: Teks (misal: "Male", "Female") atau representasi biner/numerik setelah encoding (misal: 0, 1).\n\nMenunjukkan jenis kelamin partisipan. Ini adalah variabel demografis lain yang dapat dianalisis untuk melihat pola atau kecenderungan terkait kepribadian.</string>
+    <string name="IntroversionScore">Tipe Data : Numerik (Integer/Float)\nBentuk Nilai Fitur : Angka dalam skala tertentu (misal: 0 hingga 10), bisa bulat atau desimal.\n\nSkor numerik yang menunjukkan preferensi seseorang pada skala Introversion (lebih fokus pada dunia internal, refleksi, dan energi dari kesendirian) atau Extraversion (lebih fokus pada dunia luar, interaksi sosial, dan mendapatkan energi dari orang lain).</string>
+    <string name="Thingking">Tipe Data : Numerik (Integer/Float)\nBentuk Nilai Numerik : Angka dalam skala tertentu (misal: 0 hingga 10), bisa bulat atau desimal.\n\nSkor numerik yang merefleksikan preferensi seseorang pada skala Thinking (membuat keputusan berdasarkan logika dan objektivitas) atau Feeling (membuat keputusan berdasarkan nilai-nilai pribadi, harmoni, dan dampak pada orang lain).</string>
+    <string name="SensingScore">Tipe Data : Numerik (Integer/Float)\nBentuk Nilai Numerik : Angka dalam skala tertentu (misal: 0 hingga 10), bisa bulat atau desimal.\n\nSkor numerik yang menunjukkan preferensi seseorang pada skala Sensing (berfokus pada fakta, detail konkret, dan pengalaman) atau Intuition (berfokus pada ide, pola abstrak, dan kemungkinan).</string>
+    <string name="JudgingScore">Tipe Data : Numerik (Integer/Float)\nBentuk Nilai Numerik : Angka dalam skala tertentu (misal: 0 hingga 10), bisa bulat atau desimal.\n\nSkor numerik yang menunjukkan preferensi seseorang pada skala Judging (lebih suka keteraturan, perencanaan, dan keputusan cepat) atau Perceiving (lebih suka fleksibilitas, spontanitas, dan adaptasi).</string>
+    <string name="Interest">Tipe Data : Kategorikal (String)\nBentuk Nilai Numerik : Teks (misal: "Others", "Arts", "Sports", "Technology", "Unknown").\n\nBerisi informasi tentang minat atau ketertarikan spesifik yang dimiliki oleh individu. Minat dapat memberikan wawasan tambahan tentang preferensi aktivitas dan cara seseorang menghabiskan waktu, yang seringkali berkaitan dengan tipe kepribadian.</string>
+
+    <!-- MODEL -->
+    <string name="modelml">model = keras.Sequential([\nkeras.Input(shape=(X_train.shape[1],)),\nlayers.Dense(128, activation="relu"),\nlayers.Dense(64, activation="relu"),\nlayers.Dense(32, activation="relu"),\nlayers.Dense(len(le.classes_), activation="softmax")\n])\n\nModel ini terdiri dari tiga lapisan tersembunyi dense dengan fungsi aktivasi ReLU, dan satu lapisan output dense dengan aktivasi Softmax untuk mengklasifikasikan tipe kepribadian MBTI.</string>
+    <string name="model2">Model ini dikonfigurasi untuk pelatihan menggunakan optimizer Adam dan fungsi loss</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main">#6D57FC</color>
+    <color name="tentangaplikasi">#6D57FC</color>
+    <color name="dataset">#FA6E5A</color>
+    <color name="fitur">#FEB18F</color>
+    <color name="model">#FFCF86</color>
+    <color name="simulasi">#6CB28E</color>
+    <color name="text">#FFECCC</color>
+    <color name="text2">#3F414E</color>
+    <color name="tentaplikasi2">#8E97FD</color>
+    <color name="amber_700">#FFA000</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="teal_700">#00796B</color>
+    <color name="about_dev">#3083FF</color>
+</resources>

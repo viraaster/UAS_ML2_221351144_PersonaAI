@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dataset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER DATASET -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <!-- Background Orange -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="232dp"
+                android:background="@color/dataset"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/urbanistsemibold"
+                    android:lineSpacingExtra="7dp"
+                    android:padding="30dp"
+                    android:text="@string/dataset"
+                    android:textColor="@color/text"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+            <!-- Dekorasi sudut kanan atas -->
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="250dp"
+                android:layout_gravity="top|end"
+                android:contentDescription="Header Decoration"
+                android:scaleType="fitXY"
+                android:src="@drawable/asset3" />
+        </FrameLayout>
+
+        <!-- CARD CONTAINER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_top_white"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!-- CARD 1: Deskripsi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/urbanistbold"
+                android:padding="15sp"
+                android:text="🍔 Deskripsi"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanistregular"
+                        android:lineSpacingExtra="3dp"
+                        android:text="@string/datasetdeskripsi"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📊 List Dataset"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/tableContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

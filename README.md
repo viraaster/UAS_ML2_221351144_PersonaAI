@@ -2,7 +2,7 @@
 ![Preview Aplikasi](preview1.png)
 ![Simulasi MBTI](previewgif.gif)
 
-# PersonaAI
+# Persona AI
 Aplikasi Android untuk memprediksi kepribadian MBTI berdasarkan preferensi pengguna menggunakan model machine learning (.tflite)
 
 ## Fitur
